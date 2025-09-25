@@ -6,4 +6,4 @@ const store = configureStore({
     }
 })
 
-export default storesdfsaf
+export default store
