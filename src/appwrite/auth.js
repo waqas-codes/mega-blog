@@ -18,35 +18,36 @@ export class AuthService {
 
             if (userAccount) {
                 // call another function
-                return this.login({email, password});
+                return this.login({ email, password });
             } else {
                 return userAccount
             }
-        } catch(error){
+        } catch (error) {
             return error
         }
     }
 
-    async login(){
-        try{
+    async login() {
+        try {
             return await this.account.createEmailPasswordSession(email, password)
-        }catch(error){
+        } catch (error) {
             return error
         }
     }
 
-    async getCurrentUser(){
-        try{
+    async getCurrentUser() {
+        try {
             return await this.account.getSession()
-        }catch(error){
-            return error
+        } catch (error) {
+            console.error("getCurrentUser failed:", error.message);
+            return null;
         }
     }
 
-    async logout(){
-        try{
+    async logout() {
+        try {
             return await this.account.deleteSession()
-        }catch(error){
+        } catch (error) {
             return error
         }
     }
