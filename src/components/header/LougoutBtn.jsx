@@ -1,7 +1,7 @@
 import React from 'react'
 import AuthService from '../../appwrite/auth'
 import { useDispatch } from 'react-redux'
-import { logout } from '../../store/slices/authSlice'
+import { logout } from '../../store/authSlice'
 
 function LougoutBtn() {
     const dispatch = useDispatch()
