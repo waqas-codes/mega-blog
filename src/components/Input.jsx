@@ -7,7 +7,7 @@ const input = React.forwardRef(function Input({
     ...props
 }, ref){
     const id = useId()
-    return(h
+    return(
         <div className="w-full">
             {label && <label className="inline-block mb-1 pl-1"
             htmlFor={id}>
