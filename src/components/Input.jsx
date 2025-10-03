@@ -23,6 +23,5 @@ const input = React.forwardRef(function Input({
         </div>
     )
 }
-
-    
 )
+export {input}
