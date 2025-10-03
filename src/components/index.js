@@ -13,5 +13,5 @@ export {
     Container,
     LougoutBtn,
     Button,
-    input.
+    input
 }
