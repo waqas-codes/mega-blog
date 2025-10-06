@@ -5,6 +5,8 @@ import Logo from './Logo'
 import Button from './Button'
 import {Input} from './Input'
 import LougoutBtn from './header/LougoutBtn'
+import RTE from './RTE'
+import Select from './Select'
 
 export {
     Logo,
@@ -13,5 +15,7 @@ export {
     Container,
     LougoutBtn,
     Button,
-    Input
+    Input,
+    RTE,
+    Select
 }
