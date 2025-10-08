@@ -1,6 +1,6 @@
 import React, { use, useCallback } from 'react'
 import { useForm } from 'react-hook-form'
-import { Button, input, RTE, Select } from '../index'
+import { Button, Input, RTE, Select } from '../index'
 import AppwriteService from '../../appwrite/config'
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
@@ -14,7 +14,7 @@ export default function PostForm({ post }) {
             slug: post?.$id || '',
             status: post?.status || 'active',
         },
-    })
+    }),
 
     const navigate = useNavigate()
     const userData = useSelector((state) => state.auth.userData)
