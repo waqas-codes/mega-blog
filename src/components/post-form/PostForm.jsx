@@ -14,7 +14,7 @@ export default function PostForm({ post }) {
             slug: post?.$id || '',
             status: post?.status || 'active',
         },
-    })
+    })j
 
     const navigate = useNavigate()
     const userData = useSelector((state) => state.auth.userData)
