@@ -7,6 +7,8 @@ import {Input} from './Input'
 import LougoutBtn from './header/LougoutBtn'
 import RTE from './RTE'
 import Select from './Select'
+import Signup from './Signup'
+import Login from './Login'
 
 export {
     Logo,
@@ -17,5 +19,7 @@ export {
     Button,
     Input,
     RTE,
-    Select
+    Select,
+    Signup,
+    Login
 }
