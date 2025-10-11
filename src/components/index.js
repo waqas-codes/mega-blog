@@ -9,6 +9,7 @@ import RTE from './RTE'
 import Select from './Select'
 import Signup from './Signup'
 import Login from './Login'
+import PostCard from './PostCard'
 
 export {
     Logo,
@@ -21,5 +22,6 @@ export {
     RTE,
     Select,
     Signup,
-    Login
+    Login,
+    PostCard
 }
