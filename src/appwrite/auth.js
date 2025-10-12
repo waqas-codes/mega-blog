@@ -37,11 +37,12 @@ export class AuthService {
 
     async getCurrentUser() {
         try {
-            return await this.account.getSession()
+            return await this.account.get();
         } catch (error) {
-            console.error("getCurrentUser failed:", error.message);
-            return null;
+            console.log("Appwrite serive :: getCurrentUser :: error", error);
         }
+
+        return null;
     }
 
     async logout() {
