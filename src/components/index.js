@@ -10,6 +10,7 @@ import Select from './Select'
 import Signup from './Signup'
 import Login from './Login'
 import PostCard from './PostCard'
+import AuthLayout from "./AuthLayout"
 
 export {
     Logo,
@@ -23,5 +24,6 @@ export {
     Select,
     Signup,
     Login,
-    PostCard
+    PostCard,
+    AuthLayout
 }
