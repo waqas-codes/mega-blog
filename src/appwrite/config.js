@@ -75,7 +75,7 @@ export class Services{
         }
     }
 
-    async getPosts(queries = [queries.equal("status", "active")]){
+    async getPosts(queries = [Query.equal("status", "active")]){
         try {
             return await this.databases.listDocuments(
                 conf.appwriteDatabaseId,
@@ -83,9 +83,11 @@ export class Services{
                 queries
             )
         } catch (error) {
-            return error
+            console.log("Appwrite serive :: getPosts :: error", error);
+            return false
         }
     }
+
 
     //file upload service
 
