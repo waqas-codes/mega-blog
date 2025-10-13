@@ -4,7 +4,7 @@ import Container from './container/Container'
 import Logo from './Logo'
 import Button from './Button'
 import {Input} from './Input'
-import LougoutBtn from './header/LougoutBtn'
+import LogoutBtn from './header/LogoutBtn'
 import RTE from './RTE'
 import Select from './Select'
 import Signup from './Signup'
@@ -17,7 +17,7 @@ export {
     Footer,
     Header,
     Container,
-    LougoutBtn,
+    LogoutBtn,
     Button,
     Input,
     RTE,

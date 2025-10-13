@@ -1,5 +1,5 @@
 import React from 'react'
-import {Logo, Container, LougoutBtn} from '../index'
+import {Logo, Container, LogoutBtn} from '../index'
 import { useSelector } from 'react-redux'
 import { useNavigate, Link } from 'react-router-dom'
 
@@ -35,6 +35,7 @@ function Header() {
     },
   ]
   return (
+    
     <header className='py-3 shadow bg-gray-500'>
       <Container>
         <nav className='flex'>
@@ -60,7 +61,7 @@ function Header() {
             {
               authStatus && (
                 <li>
-                  <LougoutBtn/>
+                  <LogoutBtn/>
                 </li>
               )
             }

@@ -29,7 +29,7 @@ export class Services{
                 }
             )
         } catch (error) {
-            return error
+            console.log("Appwrite serive :: createPost :: error", error);
         }
     }
     
@@ -47,7 +47,7 @@ export class Services{
                 }
             )
         } catch (error) {
-            return error
+            console.log("Appwrite service :: getPost :: error", error)
         }
     }
 
@@ -59,7 +59,8 @@ export class Services{
                 slug
             )
         } catch (error) {
-            return error
+            console.log("Appwrite service :: getPost :: error", error)
+            return false
         }
     }
 
@@ -71,7 +72,8 @@ export class Services{
                 slug
             )
         } catch (error) {
-            return error
+            console.log("Appwrite service :: getPost :: error", error)
+            return false
         }
     }
 
@@ -99,7 +101,8 @@ export class Services{
                 file
             )
         } catch (error) {
-            return error
+            console.log("Appwrite serive :: createPost :: error", error);
+            return false
         }
     }
 
@@ -110,19 +113,16 @@ export class Services{
                 fileId
             )
         } catch (error) {
-            return error
+            console.log("Appwrite serive :: createPost :: error", error);
+            return false
         }
     }
 
     async getFilePreview(fileId){
-        try {
-            return await this.bucket.getFilePreview(
-                conf.appwriteBucketId,
-                fileId
-            )
-        } catch (error) {
-            return error
-        }
+        return this.bucket.getFilePreview(
+            conf.appwriteBucketId,
+            fileId
+        )
     }
 }
 
