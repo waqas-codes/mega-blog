@@ -42,11 +42,11 @@ export class AuthService {
             const user = await this.account.get();
             // return await this.account.get();
             console.log("user is logged in :",user)
-            return user
+            return true
         } catch (error) {
             // console.log("Appwrite serive :: getCurrentUser :: error", error);
             console.log("user is not logged in:")
-            return null
+            return false
         }
 
         return null;
